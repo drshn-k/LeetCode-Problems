@@ -11,7 +11,7 @@ public:
 }
 int removeStones(vector<vector<int>>& stones) {
   unordered_map<int, vector<int>> rows, cols;
-  unordered_set<int> v_rows;
+  unordered_set<int> v_rows;\
   auto res = 0;
   for (auto s : stones) rows[s[0]].push_back(s[1]), cols[s[1]].push_back(s[0]);
   for (auto r : rows) res += max(0, dfs(rows, cols, v_rows, r.first) - 1);
