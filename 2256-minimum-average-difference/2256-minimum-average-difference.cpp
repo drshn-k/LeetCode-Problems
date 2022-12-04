@@ -10,9 +10,9 @@ public:
         for (int i=0; i<n; i++) {
             sumFromFront += nums[i];
             sumFromEnd -= nums[i];
-            int a = sumFromFront / (i+1); // average of the first i + 1 elements.
-            int b = (i == n-1) ? 0 : sumFromEnd / (n-i-1); // average of the last n - i - 1 elements.
+            int a = sumFromFront / (i+1); 
             
+            int b = (i == n-1) ? 0 : sumFromEnd / (n-i-1); 
             if (abs(a-b) < minAverageDifference) {
                 minAverageDifference = abs(a-b);
                 
