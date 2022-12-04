@@ -15,6 +15,7 @@ public:
             
             if (abs(a-b) < minAverageDifference) {
                 minAverageDifference = abs(a-b);
+                
                 index = i;
             }
         }
